@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Header</title>
+</head>
+<body background='hac.gif'>
+<table border='1' align='center'>
+<tr>
+<td align='center'>
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+ 
+// LIST OF IMAGES
+path[0] = "fac1.jpg";
+path[1] = "fac2.jpg";
+path[2] = "fac3.jpg";
+path[3] = "fac4.jpg";
+path[4] = "fac5.jpg";
+path[5] = "fac6.jpg";
+path[6] = "fac7.jpg";
+path[7] = "fac8.jpg";
+path[8] = "fac9.jpg";
+path[9] = "fac10.jpg";
+path[10] = "fac11.jpg";
+path[11] = "fac12.jpg";
+path[12] = "fac13.jpg";
+path[13] = "fac14.jpg";
+path[14] = "mlk1.jpg";
+path[15] = "mlk2.jpg";
+path[16] = "mlk3.jpg";
+path[17] = "mlk4.jpg";
+path[18] = "mlk5.jpg";
+path[19] = "mlk6.jpg";
+path[20] = "mlk7.jpg";
+path[21] = "mlk8.jpg";
+path[22] = "mlk9.jpg";
+function swapImage()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",700);
+}
+window.onload=swapImage;
+</script>
+<img height="340" name="slide" src="image_1.gif" width="300" 
+/>
+</td>
+</tr>
+</table>
+</body>
+</html>
